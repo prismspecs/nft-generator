@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="make your own bad NFT art to sell">
+    <meta name="keywords" content="NFT, grayson earle, cryptocurrency">
+    <meta name="author" content="Grayson Earle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>bad NFT art generator</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="libraries/CCapture.all.min.js"></script>
+    <script src="libraries/gif.worker.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      #container {
+        height:100%;
+        width:80%;
+        margin:0 auto;
+        margin-top:20px;
+      }
+      body {
+        background-color:#eee;
+      }
+      #canvas-container {
+        
+      }
+      
+      .control {
+        float:left;
+        width:250px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+
+    <div id="container">
+    <div id="canvas-container"></div>
+
+    <div class="control">
+    <p>brandereum</p>
+    <input type="range" id="ether_3d" min="0" max="2" step="1">
+    </div>
+    
+    <div class="control">
+    <p>spin around for no reason</p>
+    <input type="range" id="spin_speed" min="0.0" max="0.04" step=".001">
+    </div>
+    
+    <div class="control">
+    <p>color vibe</p>
+    <input type="range" id="color_vibe" min="0" max="4" step="1">
+    </div>
+    
+    <div class="control">
+    <p>edgelord</p>
+    <input type="range" id="intensity_slider" min="0.0" max="0.1" step=".0001">
+    </div>
+    
+    <div class="control">
+    <p>emojis instead of making anything yourself</p>
+    <input type="range" id="emoji_slider" min="0" max="50" step="1">
+    </div>
+    
+    <div class="control">
+    <p>trippy</p>
+    <input type="range" id="trippy" min="0" max="1" step="1">
+    </div>
+    
+    <div class="control">
+    <p>it's christmas</p>
+    <input type="range" id="snow_slider" min="0" max="5" step="1">
+    </div>
+    
+    <div class="control">
+    <p>bootlicker</p>
+    <input type="range" id="musk_slider" min="0" max="3" step="1">
+    </div>
+    
+    <div class="control">
+    <p>save</p>
+    <button type="button" id="save_image_button">save snapshot</button>
+    <button type="button" id="save_gif_button">save gif</button>
+    </div>
+
+    <div class="control">
+      <p>generate!</p>
+      <button type="button" id="randomize_button">generate new!</button>
+    </div>
+
+    </div>
+
+  </body>
+</html>
